@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Tilt Warp', cursive;
+    color: #333;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #20b75d;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 30px;
+}
+
+#userCont, #oppNameCont, #valueCont, #whosTurn {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#enterName {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#find {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #20b75d;
+    color: #fff;
+    margin-top: 20px;
+    width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+#find:hover {
+    background-color: #17a048;
+}
+
+#loading {
+    width: 50px;
+    margin-top: 20px;
+}
+
+#cont {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.btn {
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+    background-color: #e5e5e5;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #d4d4d4;
+    transform: scale(1.05);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background-color: #bbb;
+    color: #555;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#bigcont {
+    display: none;
+    margin-top: 20px;
+}
+
+#oppNameCont {
+    position: absolute;
+    right: 0;
+}
